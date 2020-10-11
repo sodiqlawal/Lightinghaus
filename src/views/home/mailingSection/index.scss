@@ -1,0 +1,106 @@
+@import "../../../config/variable.scss";
+
+.mailing-section {
+  background: $primary;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background: $tertiary;
+    border-radius: 5px;
+    gap: 20px;
+
+    .left {
+      width: 50%;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .top {
+        display: flex;
+        align-items: center;
+
+        .mail-icon {
+          margin-right: 1rem;
+          font-size: 3rem;
+        }
+
+        .mailing-text {
+          font-size: $largeFont;
+        }
+      }
+
+      .middle-text {
+        font-size: $regularFont;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid $dark;
+        background: transparent;
+
+        & ::placeholder {
+          color: $gray;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        background: $dark;
+        border: 1px solid $dark;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: $regularFont;
+        color: $light;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      width: 50%;
+      img {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// media queries
+
+@media (max-width: 800px) {
+  .mailing-section {
+    .container {
+      .left {
+        button {
+          margin-top: 2rem;
+        }
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mailing-section {
+    .container {
+      .left {
+        width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import "../../../config/variable.scss";
+
+.footer {
+  background: $footer;
+  color: $light;
+  padding-right: 1rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 12px;
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      width: 22%;
+      min-width: 200px;
+      font-size: $regularFont;
+      flex-grow: 0.5;
+
+      .title-container {
+        h5 {
+          font-size: $regularFont;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .first {
+      margin-top: 1rem;
+      img {
+        width: 60px;
+      }
+
+      p {
+        word-spacing: 0.5px;
+      }
+    }
+
+    .second {
+      ul {
+        list-style: none;
+
+        li {
+          cursor: pointer;
+          font-size: 14px;
+        }
+
+        & > :first-child {
+          color: $secondary;
+        }
+      }
+    }
+
+    .third {
+      .icon {
+        font-size: 1rem;
+        margin-right: 5px;
+      }
+    }
+
+    .fourth {
+      .title-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+          height: 35px;
+          width: 35px;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+
+        .right {
+          h5 {
+            margin-bottom: 2px;
+          }
+
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .store {
+        display: flex;
+        flex-wrap: wrap;
+        .app-store,
+        .google-play {
+          margin-bottom: 0.5rem;
+          min-width: 120px;
+          cursor: pointer;
+          margin-right: 15px;
+          height: fit-content;
+          border-radius: 5px;
+          padding: 1px 5px;
+          display: flex;
+          align-items: center;
+          border: 0.1px solid $light;
+          box-sizing: border-box;
+          .icon {
+            width: 20px;
+            height: 20px;
+            color: $light;
+            margin-right: 5px;
+          }
+
+          .note {
+            p {
+              margin-bottom: 2px;
+              font-size: $smallerFont;
+              margin-top: 0;
+            }
+
+            h5 {
+              margin-top: 0;
+              margin-bottom: 0;
+              font-size: $smallFont;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+
+  // start address
+  .address {
+    padding-right: 1rem;
+    .container {
+      padding: 0;
+    }
+
+    background: $dark;
+    color: $light;
+    width: 100%;
+    display: flex;
+    align-self: center;
+
+    ul {
+      flex-wrap: wrap;
+      display: flex;
+      list-style: none;
+      align-items: flex-end;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      li {
+        margin-right: 1.2rem;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          margin-right: 10px;
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: $smallFont;
+        }
+      }
+    }
+  }
+  //   end address
+}
+
+@media (max-width: 1030px) {
+  .footer {
+    .address {
+      ul {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    .container {
+      .first,
+      .second,
+      .third,
+      .fourth {
+        width: 50%;
+      }
+    }
+
+    .fourth {
+      margin-top: 1rem;
+    }
+  }
+}

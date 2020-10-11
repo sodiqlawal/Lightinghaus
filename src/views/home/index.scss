@@ -1,0 +1,18 @@
+@import "../../config/variable.scss";
+
+.home {
+  transition: all 0.5s ease;
+  font-family: $fontRegular;
+  .container {
+    max-width: 1140px;
+    margin: auto;
+    // padding: 0 1rem;
+    width: 100%;
+  }
+
+  overflow-x: hidden;
+
+  ul {
+    padding: 0;
+  }
+}
