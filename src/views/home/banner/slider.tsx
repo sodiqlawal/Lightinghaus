@@ -85,7 +85,7 @@ const Slider = (props: TProps) => {
 
   useEffect(() => {
     if (transition === 0) setState({ ...state, transition: 0.7 });
-  }, [transition, state]);
+  }, [transition]);
 
   const handleResize = () => {
     setState({ ...state, translate: getWidth(), transition: 0 });
