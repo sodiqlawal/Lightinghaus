@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Lightinghaus/static/css/main.b5611c91.chunk.css",
+    "main.js": "/Lightinghaus/static/js/main.dcdbca59.chunk.js",
+    "main.js.map": "/Lightinghaus/static/js/main.dcdbca59.chunk.js.map",
+    "runtime-main.js": "/Lightinghaus/static/js/runtime-main.99bc06c6.js",
+    "runtime-main.js.map": "/Lightinghaus/static/js/runtime-main.99bc06c6.js.map",
+    "static/js/2.8275c140.chunk.js": "/Lightinghaus/static/js/2.8275c140.chunk.js",
+    "static/js/2.8275c140.chunk.js.map": "/Lightinghaus/static/js/2.8275c140.chunk.js.map",
+    "index.html": "/Lightinghaus/index.html",
+    "precache-manifest.b8a492fb3a439cd865a93615e2a53301.js": "/Lightinghaus/precache-manifest.b8a492fb3a439cd865a93615e2a53301.js",
+    "service-worker.js": "/Lightinghaus/service-worker.js",
+    "static/css/main.b5611c91.chunk.css.map": "/Lightinghaus/static/css/main.b5611c91.chunk.css.map",
+    "static/js/2.8275c140.chunk.js.LICENSE.txt": "/Lightinghaus/static/js/2.8275c140.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/Lightinghaus/static/media/banner.ae78f6bd.jpeg",
+    "static/media/app-store.36a3337c.svg": "/Lightinghaus/static/media/app-store.36a3337c.svg",
+    "static/media/categoryOne.jpg": "/Lightinghaus/static/media/categoryOne.73fa9f3e.jpg",
+    "static/media/categoryTwo.jpg": "/Lightinghaus/static/media/categoryTwo.26f73524.jpg",
+    "static/media/google-play.e7c3715a.svg": "/Lightinghaus/static/media/google-play.e7c3715a.svg",
+    "static/media/mailingImg.png": "/Lightinghaus/static/media/mailingImg.03cf9664.png",
+    "static/media/popularThree.png": "/Lightinghaus/static/media/popularThree.3772f441.png",
+    "static/media/popularTwo.jpg": "/Lightinghaus/static/media/popularTwo.b3f4081b.jpg",
+    "static/media/spaceThree.jpg": "/Lightinghaus/static/media/spaceThree.60b58a76.jpg",
+    "static/media/spaceTwo.jpg": "/Lightinghaus/static/media/spaceTwo.02c8ad06.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99bc06c6.js",
+    "static/js/2.8275c140.chunk.js",
+    "static/css/main.b5611c91.chunk.css",
+    "static/js/main.dcdbca59.chunk.js"
+  ]
+}
