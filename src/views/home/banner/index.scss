@@ -1,5 +1,22 @@
 @import "../../../config/variable.scss";
 
+.bannerbutton {
+  /* background: transparent; */
+  background: orangered !important;
+  color: white;
+  letter-spacing: 0.3rem;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  transition: background 0.5s linear;
+  margin-top: 0.5rem;
+}
+
+.bannerbutton:hover {
+  color: black;
+  background: white;
+  font-weight: 600;
+}
+
 .banner {
   background: url(../../../assets/banner.jpeg), #c4c4c4;
   background-position: center;
@@ -21,8 +38,7 @@
   }
   .card-container {
     display: flex;
-    justify-content: flex-start
-    ;
+    justify-content: flex-start;
   }
 
   .card {
@@ -62,31 +78,53 @@
       }
     }
   }
+}
+.dot-line {
+  width: 30px;
+  height: 2px;
+  background: $light;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navigations {
+  margin-top: 7rem;
+  display: flex;
 
-  .navigations {
-    margin-top: 7rem;
-    display: flex;
-
-    .line {
-      &:first-child {
-        background: #f4811f;
-      }
-
-      width: 30px;
-      height: 2px;
-      background: $light;
-      margin-right: 10px;
-      cursor: pointer;
+  .line {
+    &:first-child {
+      background: #f4811f;
     }
   }
 }
 
+.ft-slick__dots--custom {
+  margin-right: 1rem !important;
+}
+
+.slick-dots {
+  text-align: start !important;
+  bottom: -80px;
+  li {
+    margin-right: 1rem;
+  }
+
+  li.slick-active {
+    div.line {
+      background: $secondary !important;
+    }
+  }
+}
 
 // media queries
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
+  .slick-dots {
+    text-align: start !important;
+    bottom: -40px;
+  }
+
   .banner {
-    .card-container{
+    .card-container {
       .card {
         width: 50%;
       }
@@ -94,16 +132,13 @@
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .banner {
     height: 50vh;
-    .card-container{
+    .card-container {
       .card {
         width: 80%;
       }
     }
   }
 }
-
-
-

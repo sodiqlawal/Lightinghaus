@@ -1,35 +1,126 @@
 import React from "react";
 import CallMadeIcon from "@material-ui/icons/CallMade";
-import Dots from "./dots";
+import Slider from "react-slick";
 
 import "./index.scss";
 
-const Banner = ({ slides, activeIndex }: any) => {
+const style = {
+  width: "30px",
+  height: "2px",
+  background: "white",
+};
+
+const Banner = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    appendDots: (dots: React.ReactNode) => <ul>{dots}</ul>,
+    customPaging: (i: any) => (
+      <div className="ft-slick__dots--custom">
+        <div className="line" style={style}></div>
+      </div>
+    ),
+  };
   return (
     <section className="banner">
-      {/* <Slider slides={images} /> */}
       <div className="container">
-        <div className="card-container">
-          {/* start card */}
-          <div className="card">
-            <h3>Explore our Showroom</h3>
-            <p className="text">
-              Not sure of what you’re looking for? No worries, use{" "}
-              <span>Lighting Xplorer</span> to see what you can get.
-            </p>
-            <button>
-              Proceed to Lightning Xplorer{" "}
-              <span>
-                <CallMadeIcon className="arrow" />
-              </span>
-            </button>
+        <Slider {...settings}>
+          <div className="card-container">
+            {/* start card */}
+            <div className="card">
+              <h3>Explore our Showroom</h3>
+              <p className="text">
+                Not sure of what you’re looking for? No worries, use{" "}
+                <span>Lighting Xplorer</span> to see what you can get.
+              </p>
+              <button>
+                Proceed to Lightning Xplorer{" "}
+                <span>
+                  <CallMadeIcon className="arrow" />
+                </span>
+              </button>
+            </div>
+            {/* end card */}
           </div>
-          {/* end card */}
-        </div>
 
-        {/* start navaigations */}
-        <Dots slides={slides} activeIndex={activeIndex} />
-        {/* end navigations */}
+          <div className="card-container">
+            {/* start card */}
+            <div className="card">
+              <h3>Explore our Showroom</h3>
+              <p className="text">
+                Not sure of what you’re looking for? No worries, use{" "}
+                <span>Lighting Xplorer</span> to see what you can get.
+              </p>
+              <button>
+                Proceed to Lightning Xplorer{" "}
+                <span>
+                  <CallMadeIcon className="arrow" />
+                </span>
+              </button>
+            </div>
+            {/* end card */}
+          </div>
+
+          <div className="card-container">
+            {/* start card */}
+            <div className="card">
+              <h3>Explore our Showroom</h3>
+              <p className="text">
+                Not sure of what you’re looking for? No worries, use{" "}
+                <span>Lighting Xplorer</span> to see what you can get.
+              </p>
+              <button>
+                Proceed to Lightning Xplorer{" "}
+                <span>
+                  <CallMadeIcon className="arrow" />
+                </span>
+              </button>
+            </div>
+            {/* end card */}
+          </div>
+
+          <div className="card-container">
+            {/* start card */}
+            <div className="card">
+              <h3>Explore our Showroom</h3>
+              <p className="text">
+                Not sure of what you’re looking for? No worries, use{" "}
+                <span>Lighting Xplorer</span> to see what you can get.
+              </p>
+              <button>
+                Proceed to Lightning Xplorer{" "}
+                <span>
+                  <CallMadeIcon className="arrow" />
+                </span>
+              </button>
+            </div>
+            {/* end card */}
+          </div>
+
+          <div className="card-container">
+            {/* start card */}
+            <div className="card">
+              <h3>Explore our Showroom</h3>
+              <p className="text">
+                Not sure of what you’re looking for? No worries, use{" "}
+                <span>Lighting Xplorer</span> to see what you can get.
+              </p>
+              <button>
+                Proceed to Lightning Xplorer{" "}
+                <span>
+                  <CallMadeIcon className="arrow" />
+                </span>
+              </button>
+            </div>
+            {/* end card */}
+          </div>
+        </Slider>
+        {/* <Slider slides={images} /> */}
       </div>
     </section>
   );
